@@ -1,3 +1,21 @@
+def plus(num1, num2):
+    print(num1 + num2)
+def minus(num1, num2):
+    print(num1 - num2)
+def multiply(num1, num2):
+    print(num1 * num2)
+def devision(num1, num2):
+    if num2 == 0:
+        print("DO NOT DIVIDE BY ZERO!!!")
+    else:
+        print(num1 / num2)
+def power(num1, num2):
+    print(num1 ** num2)
+def mod(num1, num2):
+    print(num1 % num2)
+def root(num1, num2):
+    print(num1 ** (1 / num2))
+
 while True:
     s= input()
     if s== "exit":
@@ -6,21 +24,18 @@ while True:
     num1= int(num1)
     num2= int(num2)
     if op== '+':
-        print(num1 + num2)
+        plus(num1, num2)
     elif op== '-':
-        print(num1 - num2)
+        minus(num1, num2)
     elif op== '*':
-        print(num1 * num2)
+        multiply(num1, num2)
     elif op== '/':
-        if num2 ==0:
-            print("DO NOT DIVIDE BY ZERO!!!")
-        else:
-            print(num1 / num2)
+        devision(num1, num2)
     elif op=='^':
-        print(num1 ** num2)
+        power(num1, num2)
     elif op=='%':
-        print(num1 % num2)
+        mod(num1, num2)
     elif op== 'r':
-        print(num1 ** (1/num2))
+        root(num1, num2)
 
     
